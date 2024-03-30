@@ -1,0 +1,17 @@
+[gd_scene load_steps=2 format=3 uid="uid://beisn2gurerqp"]
+
+[ext_resource type="Script" path="res://test.gd" id="1_ykt21"]
+
+[node name="Main" type="Node2D"]
+
+[node name="canvas" type="CanvasLayer" parent="."]
+
+[node name="OpenSpreadSheetBtn" type="Button" parent="canvas"]
+offset_left = 1001.0
+offset_right = 1152.0
+offset_bottom = 46.0
+text = "Spread Sheet View
+"
+script = ExtResource("1_ykt21")
+
+[connection signal="button_down" from="canvas/OpenSpreadSheetBtn" to="." method="_on_button_button_down"]

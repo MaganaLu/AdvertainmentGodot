@@ -1,0 +1,20 @@
+[gd_scene load_steps=2 format=3 uid="uid://dgvpj8qsed3h2"]
+
+[ext_resource type="Script" path="res://excel_sheet.gd" id="1_a3g46"]
+
+[node name="ExcelSheet" type="Node2D"]
+script = ExtResource("1_a3g46")
+
+[node name="Label" type="Label" parent="."]
+offset_left = 515.0
+offset_right = 618.0
+offset_bottom = 23.0
+text = "excel sheet
+"
+
+[node name="HomeBtn" type="Button" parent="."]
+offset_right = 92.0
+offset_bottom = 58.0
+text = "Home"
+
+[connection signal="button_up" from="HomeBtn" to="." method="_on_home_btn_button_up"]

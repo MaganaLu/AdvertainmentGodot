@@ -1,0 +1,37 @@
+[gd_scene load_steps=2 format=3 uid="uid://deg0abo5s6t7h"]
+
+[ext_resource type="Script" path="res://newspaper.gd" id="1_toesk"]
+
+[node name="Newspaper" type="Node2D"]
+script = ExtResource("1_toesk")
+
+[node name="BackToMainBtn" type="Button" parent="."]
+offset_right = 146.0
+offset_bottom = 82.0
+text = "home
+"
+
+[node name="Label" type="Label" parent="."]
+offset_left = 182.0
+offset_right = 417.0
+offset_bottom = 82.0
+text = "Newspaper 
+"
+
+[node name="Button" type="Button" parent="."]
+offset_left = 36.0
+offset_top = 197.0
+offset_right = 182.0
+offset_bottom = 256.0
+text = "Units+
+"
+
+[node name="Button2" type="Button" parent="."]
+offset_left = 330.0
+offset_top = 197.0
+offset_right = 476.0
+offset_bottom = 256.0
+text = "Value+
+"
+
+[connection signal="button_up" from="BackToMainBtn" to="." method="_on_back_to_main_btn_button_up"]

@@ -1,0 +1,23 @@
+[gd_scene load_steps=3 format=3 uid="uid://beisn2gurerqp"]
+
+[ext_resource type="Script" path="res://main.gd" id="1_k5c2e"]
+[ext_resource type="Script" path="res://test.gd" id="1_ykt21"]
+
+[node name="Main" type="Node2D"]
+script = ExtResource("1_k5c2e")
+
+[node name="canvas" type="CanvasLayer" parent="."]
+
+[node name="OpenSpreadSheetBtn" type="Button" parent="canvas"]
+offset_left = 1001.0
+offset_right = 1152.0
+offset_bottom = 46.0
+text = "Spread Sheet View
+"
+script = ExtResource("1_ykt21")
+
+[node name="opneNewspaperBtn" type="Button" parent="canvas"]
+offset_right = 670.0
+offset_bottom = 85.0
+
+[connection signal="button_down" from="canvas/OpenSpreadSheetBtn" to="." method="_on_button_button_down"]
